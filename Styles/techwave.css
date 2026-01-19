@@ -42,3 +42,12 @@ hr{
     height: 760px;
     background-image: url(../assets/hero-bg.png);
 }
+.video iframe{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.social img{
+    border-radius: 10px;
+    border: 2px solid #ffffff3e;
+    padding: 10px;
+}
