@@ -34,7 +34,7 @@ body{
    cursor: pointer;
 }
 hr{
-    color: white;
+    color: rgba(255, 255, 255, 0.249)
 }
 
 .banner-container{
@@ -50,4 +50,8 @@ hr{
     border-radius: 10px;
     border: 2px solid #ffffff3e;
     padding: 10px;
+}
+
+.foot{
+    background-image: url(../assets/footer-bg.png);
 }
