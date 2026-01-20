@@ -1,14 +1,16 @@
 @import "tailwindcss";
-body{
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --primary-color: linear-gradient(47.64deg, #F7E93F, #FB09B4, #9100F8);
 }
-.nav-container{
+
+.nav-container {
     width: 100%;
     height: 90px;
     display: flex;
@@ -16,7 +18,7 @@ body{
     background-color: #1A0B2E;
 }
 
-.btn{
+.btn {
     background: var(--primary-color);
     border-radius: 10000px;
     color: #ffffff;
@@ -24,89 +26,257 @@ body{
     cursor: pointer;
 }
 
-.nav-btn button{
-   background: var(--primary-color);
-   border: none;
-   border-radius: 10000px;
-   padding: 12px 16px;
-   color: #ffffff;
-   justify-content: center;
-   cursor: pointer;
+.nav-btn button {
+    background: var(--primary-color);
+    border: none;
+    border-radius: 10000px;
+    padding: 12px 16px;
+    color: #ffffff;
+    justify-content: center;
+    cursor: pointer;
 }
-hr{
+
+hr {
     color: rgba(255, 255, 255, 0.249)
 }
 
-.banner-container{
+.banner-container {
     width: 100%;
     height: 760px;
     background-image: url(../assets/hero-bg.png);
 }
-.video iframe{
+
+.video iframe {
     border-radius: 20px 20px 0px 0px;
 }
 
-.social img{
+.social img {
     border-radius: 10px;
     border: 2px solid #ffffff3e;
     padding: 10px;
 }
 
-.foot{
+.foot {
     background-image: url(../assets/footer-bg.png);
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-@media  screen and (max-width:576px) {
+.hamburger {
+    display: none;
+}
 
-    #featured-episode{
-       height: 2450px;
-       margin: 0 auto;
+
+@media screen and (max-width:576px) {
+
+    /* Nav */
+    .menu li {
+        display: none;
     }
-    .featured p{
+
+    .nav-btn {
+        display: none;
+    }
+
+    .hamburger {
+        display: contents;
+        height: 20px;
+        width: 20px;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    /* Banner Section */
+    .banner {
+        background-color: #1A0B2E;
+        height: 450px;
+    }
+
+    .banner-container-1 #new {
+        position: absolute;
+
+        padding-top: 100px;
+        margin-left: 210px;
+    }
+
+    .banner-container {
+        width: 374px;
+        height: 500px;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-image: url(../assets/ban-m1.png);
+    }
+
+    .banner-container-1 #circel {
+        margin-left: 140px;
+        height: 190px;
+    }
+
+    .banner-container-1 #mic {
+        position: absolute;
+        margin-left: 165px;
+        padding-top: 112px;
+        height: 170px;
+
+    }
+
+    .banner-text p {
+        font-size: 32px;
+        width: 145px;
+        margin: 0 auto;
+    }
+
+    .banner-text-des {
+        width: 260px;
+        margin: 0 auto;
+    }
+
+    /* About Section */
+    .about-section {
+        height: 600px;
+    }
+
+    .about-section-2 {
+        width: 300px;
+    }
+
+    .about-section-3 {
+        font-size: 32px;
+        width: 270px;
+        margin: 0 auto;
+    }
+
+    .about-section-4 {
+        width: 300px;
+    }
+
+    .about-section-5 {
+        width: 300px;
+    }
+
+    .about-section-6 {
+        width: 300px;
+    }
+
+    .about-description {
+        font-size: 15px;
+        padding: 5px;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .about-description-2 {
+        display: block;
+        width: 300px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    /* Grid section */
+    .choose-section {
+        height: 2300px;
+    }
+
+    .choose {
+        font-size: 25px;
+        width: 255px;
+        margin: 0 auto;
+    }
+
+    .techWave-grid {
+        display: block;
+        width: 300px;
+    }
+
+    .techWave-grid-box {
+        padding: 30px;
+        height: 400px;
+        width: 280px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* Video section */
+    #featured-episode {
+        height: 2450px;
+        margin: 0 auto;
+    }
+
+    .featured p {
         font-size: 32px;
         width: 260px;
         margin: 0 auto;
     }
 
-    .video-section{
+    .video-section {
         margin: 0 auto;
         padding-top: 40px;
         height: 1510px;
         width: 300px;
         display: block;
     }
-    .description{
+
+    .description {
         height: 480px;
         width: 300px;
         margin-top: 15px;
     }
-    .video iframe{
+
+    .video iframe {
         width: 300px;
+        margin: 0 auto;
     }
 
-    #host{
+    /* Host Section */
+    #host {
         padding-top: 100px;
         width: 300px;
         margin: 0 auto;
     }
-    .host{
+
+    .host {
         font-size: 32px;
         width: 205px;
+        margin: 0 auto;
     }
-    .host-section{
+
+    .host-section {
         text-align: center;
         width: 300px;
+        margin: 0 auto;
     }
-    .host-info{
+
+    .host-info {
         display: block;
         height: 650px;
         width: 300px;
     }
-    .social{
+
+    .social {
         width: 230px;
+    }
+
+    .foot {
+        background-image: none;
+        background-color: #1A0B2E;
+        height: 400px;
+        width: 100%;
+    }
+
+    .foot-img {
+        height: 20px;
+        width: 100px;
+    }
+
+    .foot-social {
+        height: 5px;
+        width: 200px;
+        margin-left: 2px;
     }
 }
