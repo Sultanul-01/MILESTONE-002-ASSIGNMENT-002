@@ -63,19 +63,19 @@ hr{
 @media  screen and (max-width:576px) {
 
     #featured-episode{
-       height: 2440px;
+       height: 2450px;
        margin: 0 auto;
     }
     .featured p{
         font-size: 32px;
-        width: 255px;
+        width: 260px;
         margin: 0 auto;
     }
 
     .video-section{
         margin: 0 auto;
         padding-top: 40px;
-        height: 1500px;
+        height: 1510px;
         width: 300px;
         display: block;
     }
@@ -95,7 +95,7 @@ hr{
     }
     .host{
         font-size: 32px;
-        width: 195px;
+        width: 205px;
     }
     .host-section{
         text-align: center;
