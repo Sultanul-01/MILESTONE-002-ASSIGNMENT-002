@@ -13,12 +13,13 @@
 </head>
 
 <body class="font-[Inter]">
-    <header>
+    <header class="hide">
         <nav class="nav-container items-center px-[120px]">
             <div class="text-white text-4xl font-bold cursor-pointer">
                 <p>Tech<span class="bg-linear-to-r from-[#beb878] via-[#FB09B4] to-[#9100F8] 
                bg-clip-text text-transparent">Wave</span></p>
             </div>
+            <!-- <button><img src="./assets/hamburger-menu.png" alt=""></button> -->
             <div class="menu text-white cursor-pointer">
                 <ul class="flex gap-8 text-[16px] opacity-70">
                     <li>About</li>
@@ -57,7 +58,7 @@
             </div>
         </section>
     </header>
-    <section class="bg-[#1A0B2E] h-[610px]">
+    <section class="bg-[#1A0B2E] h-[610px] hide">
         <div class="w-[750px] m-auto text-white">
             <div class="m-auto font-bold pt-10 text-5xl w-[428px]">
                 <p>About The Podcast</p>
@@ -91,7 +92,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-[#230E3D] text-white h-[970px]">
+    <section class="bg-[#230E3D] text-white h-[970px] hide">
         <div class="text-5xl font-bold h-[60px] w-[522px] m-auto">
             <p class="pt-[60px]">Why Choose TechWave</p>
         </div>
@@ -131,13 +132,13 @@
             </div>
         </div>
     </section>
-    <section class="bg-[#1A0B2E] text-white h-[1220px]">
-        <div class="text-5xl font-bold h-[60px] w-[380px] m-auto">
+    <section id="featured-episode" class=" bg-[#1A0B2E] text-white h-[1220px]">
+        <div class="featured text-5xl font-bold h-[60px] w-[380px] m-auto">
             <p class="pt-[60px]">Featured Episodes</p>
         </div>
-        <div class="flex gap-[30px] w-[1200px] m-auto pt-[100px] pb-[120px]">
+        <div class="video-section flex gap-[30px] w-[1200px] m-auto pt-[100px] pb-[120px]">
             <div>
-                <div class="bg-[#250D44] shadow-2xl rounded-[20px] h-[470px] w-[380px] px-0 py-0">
+                <div class="bg-[#250D44] shadow-2xl rounded-[20px] h-[470px] w-[380px] px-0 py-0 description">
                     <div class="video">
                         <iframe height="214px" width="380px"
                             src="https://www.youtube.com/embed/H3XAU7pgyFo?si=p_bW0P6T4KoOiaGT"
@@ -148,14 +149,14 @@
                     <p class="text-3xl p-2.5">The Future of AI in Everyday Life</p><br>
                     <p class="opacity-70 p-2.5">Exploring how artificial intelligence is transforming our daily routines
                         and what to expect in the next decade.</p>
-                    <div class="flex items-center gap-2 pl-2.5">
+                    <div class="flex items-center gap-2 pl-2.5 ">
                         <img class="h-5 w-5" src="./assets/clock.png" alt="">
-                        <p class="text-[#00FF88]">3 min</p>
+                        <p class="text-[#00FF88]">3:22 min</p>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="bg-[#250D44] shadow-2xl rounded-[20px] h-[470px] w-[380px] px-0 py-0">
+                <div class="bg-[#250D44] shadow-2xl rounded-[20px] h-[470px] w-[380px] px-0 py-0 description">
                     <div class="video">
                         <iframe height="214px" width="380px"
                             src="https://www.youtube.com/embed/QbHgJ6flUt4?si=xG0qLZn-rVMcsv6b"
@@ -168,12 +169,12 @@
                         balance in a remote environment.</p>
                     <div class="flex items-center gap-2 pl-2.5">
                         <img class="h-5 w-5" src="./assets/clock.png" alt="">
-                        <p class="text-[#00FF88]">2 min</p>
+                        <p class="text-[#00FF88]">1:58 min</p>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="bg-[#250D44] shadow-2xl rounded-[20px] h-[470px] w-[380px] px-0 py-0">
+                <div class="bg-[#250D44] shadow-2xl rounded-[20px] h-[470px] w-[380px] px-0 py-0 description">
                     <div class="video">
                         <iframe height="214px" width="380px"
                             src="https://www.youtube.com/embed/npESJ3iN2OU?si=HskSI09SGcbYZnf5"
@@ -186,26 +187,26 @@
                         senior leadership roles.</p>
                     <div class="flex items-center gap-2 pl-2.5">
                         <img class="h-5 w-5" src="./assets/clock.png" alt="">
-                        <p class="text-[#00FF88]">2 min</p>
+                        <p class="text-[#00FF88]">2:34 min</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div>
-            <div class="text-5xl font-bold h-[60px] w-[290px] m-auto">
+        <div id="host">
+            <div class="host text-5xl font-bold h-[60px] w-[290px] m-auto">
                 <p>Meet the Host</p>
             </div><br>
-            <div class="m-auto w-[1200px]">
+            <div class="m-auto w-[1200px] host-section">
                 <div
-                    class="bg-[#250D44] shadow-2xl rounded-[20px] h-[300px] w-[1200px] p-10 flex justify-center items-center gap-10">
+                    class="host-info bg-[#250D44] shadow-2xl rounded-[20px] h-[300px] w-[1200px] p-10 flex justify-center items-center gap-10">
                     <div>
                         <img src="./assets/host.png" alt="">
                     </div>
                     <div>
                         <p class="text-3xl">Alex Kumar</p><br>
-                        <p class="opacity-70">Tech entrepreneur, productivity expert, and lifelong learner. Alex has
-                            been in the tech industry for over 10 years,<br>working with startups and Fortune 500
-                            companies. Through TechWave, Alex shares insights from industry leaders and<br> practical
+                        <p class="opacity-70 ">Tech entrepreneur, productivity expert, and lifelong learner. Alex has
+                            been in the tech industry for over 10 years,<br class="hide">working with startups and Fortune 500
+                            companies. Through TechWave, Alex shares insights from industry leaders and<br class="hide"> practical
                             advice for anyone looking to grow in tech.</p><br>
                         <div class="social flex gap-6 items-center h-[50px] w-[500px]">
                             <img class="size-10" src="./assets/linkedin.png" alt="">
@@ -218,7 +219,7 @@
             </div>
         </div>
     </section>
-    <footer class="foot h-[412px] pt-[130px]">
+    <footer class="foot h-[412px] pt-[130px] hide">
         <img class="h-10 w-[260px] m-auto" src="./assets/TechWave.png" alt=""><br><br>
         <div class="text-white flex gap-10 h-5 w-[490px] m-auto items-center">
             <div class="flex gap-1.5">

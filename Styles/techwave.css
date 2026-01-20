@@ -55,3 +55,58 @@ hr{
 .foot{
     background-image: url(../assets/footer-bg.png);
 }
+
+.hide{
+    display: none;
+}
+
+@media  screen and (max-width:576px) {
+
+    #featured-episode{
+       height: 2440px;
+       margin: 0 auto;
+    }
+    .featured p{
+        font-size: 32px;
+        width: 255px;
+        margin: 0 auto;
+    }
+
+    .video-section{
+        margin: 0 auto;
+        padding-top: 40px;
+        height: 1500px;
+        width: 300px;
+        display: block;
+    }
+    .description{
+        height: 480px;
+        width: 300px;
+        margin-top: 15px;
+    }
+    .video iframe{
+        width: 300px;
+    }
+
+    #host{
+        padding-top: 100px;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .host{
+        font-size: 32px;
+        width: 195px;
+    }
+    .host-section{
+        text-align: center;
+        width: 300px;
+    }
+    .host-info{
+        display: block;
+        height: 650px;
+        width: 300px;
+    }
+    .social{
+        width: 230px;
+    }
+}
